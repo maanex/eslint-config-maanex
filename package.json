@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "description": "a not so strict eslint config I use personally",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Andreas May (maanex.me)",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maanex/eslint-config-maanex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maanex/eslint-config-maanex.git"
+  },
+  "homepage": "https://github.com/Maanex/eslint-config-maanex.git#readme"
 }
