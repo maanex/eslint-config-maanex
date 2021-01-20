@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-maanex",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "a not so strict eslint config I use personally",
   "main": "index.js",
   "author": "Andreas May (maanex.me)",
