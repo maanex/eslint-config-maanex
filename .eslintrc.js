@@ -1,13 +1,17 @@
 
 module.exports = {
   env: {
-    browser: true,
+    es6: true,
     node: true
   },
+  plugins: [
+    '@typescript-eslint'
+  ],
   extends: [
   ],
   parserOptions: {
-    parser: '@typescript-eslint/parser'
+    parser: '@typescript-eslint/parser',
+    tsconfigRootDir: __dirname
   },
   settings: {
     'import/resolver': {
@@ -29,30 +33,11 @@ module.exports = {
       ignoreReadBeforeAssign: false
     }],
     'no-lonely-if': 'error',
-    curly: ['error', 'all'],
     'require-await': 'error',
     'dot-notation': 'error',
     'no-var': 'error',
     'object-shorthand': 'error',
     'no-useless-rename': 'error',
-    'unicorn/error-message': 'error',
-    'unicorn/escape-case': 'error',
-    'unicorn/no-array-instanceof': 'error',
-    'unicorn/no-new-buffer': 'error',
-    'unicorn/no-unsafe-regex': 'off',
-    'unicorn/number-literal-case': 'error',
-    'unicorn/prefer-exponentiation-operator': 'error',
-    'unicorn/prefer-includes': 'error',
-    'unicorn/prefer-starts-ends-with': 'error',
-    'unicorn/prefer-text-content': 'error',
-    'unicorn/prefer-type-error': 'error',
-    'unicorn/throw-new-error': 'error',
-    'vue/no-parsing-error': ['error', {
-      'x-invalid-end-tag': false
-    }],
-    'vue/max-attributes-per-line': ['error', {
-      singleline: 5
-    }],
     
     // FROM NUXTJS TS
     '@typescript-eslint/no-unused-vars': ['error', { args: 'all', argsIgnorePattern: '^_' }],
