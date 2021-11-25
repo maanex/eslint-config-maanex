@@ -53,6 +53,11 @@ module.exports = {
     'no-console': 'off',
     curly: [ 'warn', 'multi-or-nest', 'consistent' ],
     'operator-linebreak': [ 'warn', 'before' ],
-    'promise/param-names': 'off'
+    'promise/param-names': 'off',
+    'spaced-comment': [ 'error', 'always', {
+      'line': {
+        'markers': [ '#region', '#endregion', 'region', 'endregion' ]
+      }
+    }]
   }
 }
