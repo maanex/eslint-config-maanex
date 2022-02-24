@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-maanex",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "a not so strict eslint config I use personally",
   "main": "index.js",
   "author": "Andreas May (maanex.me)",
@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/Maanex/eslint-config-maanex.git#readme",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
     "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-promise": "^5.1.0",
-    "typescript-eslint": "0.0.1-alpha.0"
+    "eslint-plugin-promise": "^5.1.0"
   }
 }
