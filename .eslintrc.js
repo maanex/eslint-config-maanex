@@ -11,6 +11,7 @@ module.exports = {
   ],
   extends: [
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
     tsconfigRootDir: __dirname
@@ -58,10 +59,12 @@ module.exports = {
       }
     }],
     'no-console': 'warn',
-    'promise/param-names': [ 'error', { resolvePattern: '^_?resolve$|^_?res$', rejectPattern: '^_?reject$|^_?rej$' } ],
+    // 'promise/param-names': [ 'error', { resolvePattern: '^_?resolve$|^_?res$', rejectPattern: '^_?reject$|^_?rej$' } ],
+    'promise/param-names': 'off',
     'semi': [ 'error', 'never' ],
     'eol-last': [ 'error', 'always' ],
     'indent': [ 'error', 2, { SwitchCase: 1, ignoredNodes: [ 'ConditionalExpression' ] } ],
-    'quotes': [ 'error', 'single' ]
+    'quotes': [ 'error', 'single' ],
+    'no-trailing-spaces': 'error'
   }
 }
