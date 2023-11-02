@@ -50,14 +50,18 @@ module.exports = {
     'padded-blocks': [ 'error', { classes: 'always' } ],
     'array-bracket-spacing': [ 'error', 'always', { arraysInArrays: false } ],
     'space-before-function-paren': [ 'warn', { anonymous: 'always', named: 'never', asyncArrow: 'always' } ],
-    'no-console': 'off',
     curly: [ 'warn', 'multi-or-nest', 'consistent' ],
     'operator-linebreak': [ 'warn', 'before' ],
-    'promise/param-names': 'off',
     'spaced-comment': [ 'error', 'always', {
       'line': {
         'markers': [ '#region', '#endregion', 'region', 'endregion' ]
       }
-    }]
+    }],
+    'no-console': 'warn',
+    'promise/param-names': [ 'error', { resolvePattern: '^_?resolve$|^_?res$', rejectPattern: '^_?reject$|^_?rej$' } ],
+    'semi': [ 'error', 'never' ],
+    'eol-last': [ 'error', 'always' ],
+    'indent': [ 'error', 2, { SwitchCase: 1, ignoredNodes: [ 'ConditionalExpression' ] } ],
+    'quotes': [ 'error', 'single' ]
   }
 }
