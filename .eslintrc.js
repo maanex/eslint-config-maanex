@@ -43,7 +43,11 @@ module.exports = {
     'no-useless-rename': 'error',
     
     // FROM NUXTJS TS
-    '@typescript-eslint/no-unused-vars': ['error', { args: 'all', argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': ['error', {
+      args: 'all',
+      argsIgnorePattern: '^_',
+      varsIgnorePattern: '^_'
+    }],
     'no-unused-vars': 'off',
 
     // CUSTOM
@@ -58,7 +62,6 @@ module.exports = {
         'markers': [ '#region', '#endregion', 'region', 'endregion' ]
       }
     }],
-    'no-console': 'warn',
     // 'promise/param-names': [ 'error', { resolvePattern: '^_?resolve$|^_?res$', rejectPattern: '^_?reject$|^_?rej$' } ],
     'promise/param-names': 'off',
     'semi': [ 'error', 'never' ],
